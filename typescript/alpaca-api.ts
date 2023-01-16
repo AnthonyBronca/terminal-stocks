@@ -49,9 +49,9 @@ interface BuyParamsInterface {
 //TO-DO:
 //make this dynamic - this is currently hard coded
 const buyParams: BuyParamsInterface = {
-    symbol: 'AAPL/USD',
+    symbol: 'BTC/USD',
     qty: 1,
-    side: 'buy',
+    side: 'sell',
     type: 'market',
     time_in_force: 'gtc',
 }
@@ -71,7 +71,7 @@ Promise<object>{
     return order;
 };
 // test function call
-// createOrder(buyParams)
+createOrder(buyParams)
 
 // const newOrder = Promise.resolve(createOrder(buyParams));
 

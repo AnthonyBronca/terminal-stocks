@@ -66,7 +66,7 @@ function getAccountInfo() {
 var buyParams = {
     symbol: 'BTC/USD',
     qty: 1,
-    side: 'buy',
+    side: 'sell',
     type: 'market',
     time_in_force: 'gtc'
 };
@@ -91,7 +91,7 @@ function createOrder(buyParams) {
 }
 ;
 // test function call
-// createOrder(buyParams)
+createOrder(buyParams);
 // const newOrder = Promise.resolve(createOrder(buyParams));
 // newOrder.then((value)=> {
 //     console.log(value)
@@ -116,8 +116,5 @@ function getPositions() {
         });
     });
 }
-getPositions();
-// alpaca.getPositions()
-// .then((positions: [object])=> {
-//     positions.forEach((position) => console.log(position))
-// })
+//test getPositions
+// getPositions()
